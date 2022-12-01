@@ -18,9 +18,9 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
 
 (async () => {
   const creator = new SlashCreator({
-    applicationID: env.BOT_APP_ID,
-    publicKey: env.BOT_APP_PUBLIC_KEY,
-    token: env.BOT_APP_TOKEN,
+    applicationID: env.APPLICATION_ID,
+    publicKey: env.PUBLIC_KEY,
+    token: env.APPLICATION_TOKEN,
   });
 
   await creator
